@@ -3,7 +3,7 @@ the program will start automatically.
 
 Got to the terminal after u saved the TempCrtl.py somewhere u will find it again
 In the terminal paste the line:
-  sudo nano /etc/rc.local
-Before the statement <end>  u will need to paste:
-  python3 <place of the TempCrtl.py>
+  sudo crontab -e
+Copy paste:
+  @reboot python3 <place of the TempCrtl.py>
 Now reboot ur pi and it should work
